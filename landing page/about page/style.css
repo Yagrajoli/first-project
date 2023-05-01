@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    padding: 0 9%;
+    padding-top:5.4rem ;
+}
+
+header{
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background-color:#fff;
+    height: 70px;
+    position: fixed;
+
+
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.logo h1 span{
+    color: red;
+}
+
+
+.middle-bar ul li{
+    display: inline-block;
+    padding:15px;
+}
+
+.middle-bar ul li::after{
+    content: "";
+    width:0px;
+    height: 3px;
+    display: block;
+    background: red;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.middle-bar ul li:hover::after{
+    width: 100%;
+
+}
+
+
+.middle-bar ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+
+
+
+.middle-bar ul li a:hover{
+    color: red;
+}
+
+.middle-bar ul li a.active{
+    color: red;
+}
+
+.right-bar i{
+    padding-left:20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right-bar i:hover{
+    color: rgba(255, 0, 0, 0.621);
+}
+
+
+
+
+.body-section{
+    width: 100%;
+    height: 100vh;
+    background-color:#F8F8F8;
+}
+
+
+.about-text{
+    text-align: center;
+}
+
+.about-text h1{
+    font-size: 30px;
+}
+
+.about-text h4{
+    font-size: 18px;
+    margin-top: 7px;
+    color: rgb(85, 79, 79);
+}
+
+.about-section{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.left-side-content img{
+    width: 260px;
+    height: 350px;
+}
+
+.right-side-content h2{
+    font-size: 32px;
+    margin-top: 23px;
+    margin-bottom: 25px;
+}
+
+.right-side-content p span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.right-side-content p {
+    /* font-weight: 900; */
+    /* font-size: 21px; */
+}
+
+.right-side-content p{
+    font-size: 19px;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+
+.right-side-contact-icon{
+    margin-top: 30px;
+}
+
+.right-side-contact-icon button{
+    padding: 10px 25px 10px 25px;
+    border:1px solid #FF9A62;
+    border-radius: 50px;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.right-side-contact-icon i{
+    padding: 25px;
+    font-size: 20px;
+    color:#FF9A62;
+    
+}
+
+

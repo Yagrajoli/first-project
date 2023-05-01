@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gallery{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.gallery h1{
+    font-size: 35px;
+    color: #000;
+    text-align: center;
+    margin-top:20px ;
+    text-decoration: underline;
+    color: brown;
+    font-family: sans-serif;
+}
+
+.gallery .image-row .image-col img{
+    width: 260px;
+    height: 350px;
+}
+
+
+
+.image-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0px 50px 0px 50px;
+    flex-wrap: wrap;
+
+}
+
+.gallery .image-row .image-col{
+    margin-bottom: 30px;
+
+}
+
+
+

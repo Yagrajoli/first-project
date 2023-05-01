@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    padding: 0 9%;
+    padding-top:5.4rem ;
+}
+
+header{
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background-color:#fff;
+    height: 70px;
+    position: fixed;
+
+
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    padding: 10px 10px;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.logo h1 span{
+    color: red;
+}
+
+
+.middle-bar ul li{
+    display: inline-block;
+    padding:15px;
+}
+
+ .middle-bar ul li::after{
+    content: "";
+    width:0px;
+    height: 3px;
+    display: block;
+    background: red;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.middle-bar ul li:hover::after{
+    width: 100%;
+
+} 
+
+
+.middle-bar ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+
+
+
+.middle-bar ul li a:hover{
+    color: red;
+}
+
+.middle-bar ul li a.active{
+    color:red;;
+}
+
+.right-bar i{
+    padding-left:20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right-bar i:hover{
+    color: rgba(255, 0, 0, 0.621);
+}
+
+.services-page{
+    width: 100%;
+    height: 100vh;
+    /* color: antiquewhite; */
+}
+
+.services-page .services-content{
+    text-align: center;
+    margin-top: 30px;
+    /* margin-bottom: 30px; */
+}
+
+.services-page .services-content h1{
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.services-page .services-content p{
+    font-size: 17px;
+    color: rgb(129, 125, 125);
+    /* margin-top: 3px; */
+}
+
+
+
+
+.services-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    padding: 0px 60px;
+}
+
+.services-box .left-content img{
+    width: 280px;
+    height: 290px;
+
+}
+
+
+.services-box .right-content p:first-child{
+    margin-bottom: 20px;
+
+}
+
+.services-box .right-content p{
+    margin-top: 30px;
+    line-height: 20px;
+    font-size: 17px;
+}
+
+.services-box .right-content button{
+    padding: 10px 25px 10px 25px;
+    border-radius: 50px;
+    margin-top: 20px;
+    color: #000;
+    background-color: #fff;
+    font-size: 18px;
+    border: 2px solid #FF9A62;
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+
+.services-box .right-content button:hover{
+    background-color: #FF9A62;
+    color: #000;
+}
+
+
+.main-services-section{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.main-services-section h1{
+    text-align: center;
+}
+
+.intro-services-text h1{
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+
+}
+
+.intro-services-text h1::before{
+    /* content: ''; */
+    position: absolute;
+    display: block;
+    background-color: #FF9A62;
+    width:17%;
+    height: 4px;
+    top: 30px;
+    left: 430px;
+}
+
+.main-services-section .services-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+
+}
+
+.main-services-section .services-col{
+    width: 30%;
+    border: 1px solid rgb(210, 195, 195);
+    margin-top: 40px;
+    height: 300px;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.main-services-section .services-col:hover{
+    box-shadow: 2px 0px 6px 3px rgba(0,0,0,0.53);
+}
+
+.main-services-section .services-col .services-col-text{
+    /* padding-left: 20px; */
+    text-align: center;
+}
+
+.main-services-section .services-col .services-col-text img{
+    margin-top:10px ;
+}
+
+.main-services-section .services-col .services-col-text p{
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+.main-services-section .services-col img{
+    width: 60px;
+    height: 70px;
+}

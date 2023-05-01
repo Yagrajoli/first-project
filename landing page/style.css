@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section{
+    padding: 0 8%;
+    padding-top:9.4rem ;
+}
+
+header{
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    background-color:#fff;
+    height: 70px;
+    position: fixed;
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    /* padding: 10px 10px; */
+    align-items: center;
+    height: inherit;
+    padding-inline: 0;
+}
+
+.logo h1{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.logo h1 span{
+    color: red;
+}
+
+
+
+.middle-bar ul li{
+    display: inline-block;
+    padding: 0px 22px;
+}
+
+
+ .middle-bar ul li::after{
+    content: "";
+    width:0px;
+    height: 3px;
+    display: block;
+    background: red;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.middle-bar ul li:hover::after{
+    width: 100%;
+
+} 
+
+
+.middle-bar ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+
+
+
+.middle-bar ul li a:hover{
+    color: red;
+}
+
+.middle-bar ul li a.active{
+    color: red;
+}
+
+.right-bar i{
+    padding-left:20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.right-bar i:hover{
+    color: rgba(255, 0, 0, 0.621);
+}
+
+
+
+
+.body-section{
+    width: 100%;
+    height: 100vh;
+    background-color:#7eddaf8c;
+}
+
+
+.col{
+    display: flex;
+    justify-content: space-between;
+    /* padding: 70px 8% 0px 8%; */
+}
+
+.text{
+    margin-top: 40px;
+}
+
+.text h2{
+    color: #000;
+    font-size: 40px;
+    
+}
+
+.text p{
+    color: #675F5F;
+    font-size: 21px;
+    margin-top: 30px;
+}
+
+.img img{
+    width: 250px;
+    height:370px;
+    cursor: pointer;
+}
+
+.text button{
+    margin-top: 30px;
+}
+
+.text i{
+    padding-left: 10px;
+}
+
+
+.text .btn2{
+    margin-left: 20px;
+    /* width: 110px;
+    height: 40px; */
+    padding:12px 24px;
+    background-color: #fff;
+    color: #000;
+    transition: 0.6s;
+    cursor: pointer;
+    
+}
+
+.text .btn2:hover{
+    background-color:rgba(255, 0, 0, 0.621) ;
+    color: #fff;
+}
+
+/* .text .btn1{
+    transition: all 0.3ms ease-in 0ms;
+
+}
+
+.text .btn1:hover{
+    width: 150px;
+
+
+} */
+
+
+.text button{
+    padding:12px 16px;
+    border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition:0.6s ;
+}
+
+.text button:hover{
+    background-color:rgba(255, 0, 0, 0.621) ;
+}
+
+
+.story h1{
+    text-align: center;
+    font-size: 40px;
+    color: #73D364;
+}
+
+.row-story{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+}
+
+
+.col-story img{
+    width: 90px;
+    height: 90px;
+    place-items: center;
+    border-radius: 50%;
+    margin-top: 30px;
+    
+
+}
+
+ .col-story .content-story .btn{
+    padding-block: 20px;
+} 
+
+
+
+
+.col-story .content-story h3{
+    font-size: 20px;
+    /* font-weight: 900; */
+    margin-top: 40px;
+}
+
+
+.col-story .content-story .btn button{
+    padding: 10px 30px;
+    font-size: 17px;
+    background-color: #7EDDAF;
+    border: none;
+    outline: none;
+    margin-top: 20px 0  0 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:all 0.3s;
+}
+
+.col-story .content-story .btn button:hover{
+    transform: scale(1.2);
+}
+
+.col-story .content-story p{
+    font-size: 16px;
+    color: #675F5F;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.col-story{
+    border: 1px solid rgb(210, 195, 195);
+    width:30%;
+    /* height: 50vh; */
+    text-align: center;
+    transition:0.3s;
+    cursor: pointer;
+
+}
+
+
+
+.col-story:hover{
+    box-shadow: 2px 0px 6px 3px rgba(0,0,0,0.53);
+}
+
+
+
+
+
+/*=======================RESPONSIVE DESIGN=========================
+
+================================================*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) {
+     .right-bar span{
+        display: none;
+    }
+
+    .middle-bar{
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        /* right: 0; */
+        background:#fff;
+        box-shadow: 2px 0px 6px 3px rgba(0,0,0,0.53);
+    }
+
+    .middle-bar ul li{
+        display: block;
+        padding-block:12px;
+    }
+
+
+    .middle-bar{
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+
+    
+
+
+}
+
+
+
+
+
